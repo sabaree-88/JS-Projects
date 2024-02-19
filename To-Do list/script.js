@@ -15,7 +15,7 @@ btn.addEventListener('click', ()=>{
         li.appendChild(span);
     }
     inputBox.value = "";
-    // showData();
+    saveData()
 })
 
 listContainer.addEventListener("click", (e)=>{
