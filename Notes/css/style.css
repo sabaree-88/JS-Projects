@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(76, 161, 167);
+    height: 100vh;
+    padding-top: 5%;
+    padding-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+.btn{
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+    background: #6c7afe;
+    margin-bottom: 20px;
+}
+.noteList{
+    width: 90%;
+    max-width: 500px;
+    min-height: 150px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    position: relative;
+}
+.noteList img{
+    position: absolute;
+    width: 20px;
+    right: 8px;
+    bottom: 8px;
+    cursor: pointer;
+}
