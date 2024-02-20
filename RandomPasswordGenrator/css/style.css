@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(150deg, #14aa20, #4fd87d);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+    padding: 2rem;
+}
+.container h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+.genrator{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px 14px;
+    margin-bottom: 8px;
+}
+div.msg{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px !important;
+}
+#password{
+    flex: 1;
+    padding: 20px 14px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    
+}
+.copy{
+    width: 30px;
+    cursor: pointer;
+}
+#btn{
+    padding: 18px 32px;
+    background: #e4d838;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+#btn img{
+    width: 20px;
+    margin-right: 10px;
+}
