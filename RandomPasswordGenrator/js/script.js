@@ -30,6 +30,6 @@ genBtn.addEventListener("click", ()=>{
 copy.addEventListener("click", ()=>{
     passwordBox.select();
     document.execCommand("copy");
-    document.querySelector(".msg").innerHTML = "Copied";
+    // document.querySelector(".msg").innerHTML = "Copied";
 })
 
