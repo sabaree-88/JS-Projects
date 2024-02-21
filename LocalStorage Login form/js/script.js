@@ -1,9 +1,9 @@
-document.getElementById('registrationForm').addEventListener('submit', function(event) {
+document.getElementById('registrationForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const fullName = document.getElementById('fullName').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    let fullName = document.getElementById('fullName').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
 
     const formData = {
         fullName: fullName,
@@ -11,8 +11,10 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         password: password
     };
 
-    saveFormData(formData);
-    console.log(formData.fullName);
+    saveFormData(formData)
+    alert("Registerd successfully!");
+
+
 });
 
 function saveFormData(formData) {
@@ -23,7 +25,7 @@ function saveFormData(formData) {
     localStorage.setItem('formData', JSON.stringify(storedFormData));
 }
 
-document.getElementById('login').addEventListener('submit', function(event) {
+document.getElementById('login').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const loginEmail = document.getElementById('loginemail').value;
@@ -33,7 +35,7 @@ document.getElementById('login').addEventListener('submit', function(event) {
 
     let loginSuccessful = false;
 
-    storedFormData.forEach(function(formData) {
+    storedFormData.forEach(function (formData) {
         if (formData.email === loginEmail && formData.password === loginPassword) {
             loginSuccessful = true;
             return;
