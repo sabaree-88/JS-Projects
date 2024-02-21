@@ -5,24 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LocalStorage Form</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h3>Local storage form</h3>
-    <form id="registrationForm">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
+    <div class="container sign-in">
+        <h3>Register</h3>
+        <form id="registrationForm">
+            <div class="input-group">
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+            <div class="input-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" autocomplete="username" required>
+            </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+            <div class="input-group">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" autocomplete="current-password" required>
+            </div>
+            <div class="input-btn">
+                <button type="submit" id="btn">Register</button>
+            </div>
+        </form>
+    </div>
 
-        <button type="submit">Register</button>
-    </form>
+    <!-- sign-up -->
+    <div class="container sign-up">
+        <h3>Login</h3>
+        <form id="login">
+            <div class="input-group">
+                <label for="loginemail">Email:</label><br>
+                <input type="email" id="loginemail" name="loginemail" autocomplete="username" required>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="input-group">
+                <label for="loginpassword">Password:</label><br>
+                <input type="password" id="loginpassword" name="loginpassword" autocomplete="current-password" required>
+            </div>
+            <div class="input-btn">
+                <button type="submit" id="login-btn">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
