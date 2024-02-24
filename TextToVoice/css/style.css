@@ -68,4 +68,6 @@ body{
     outline: none;
     border-radius: 20px;
     appearance: none;
+    padding: 1rem;
+    color: #fff;
 }
